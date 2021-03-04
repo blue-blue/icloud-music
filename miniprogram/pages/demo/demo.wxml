@@ -1,0 +1,12 @@
+<!--pages/demo/demo.wxml-->
+<text>{{openid}}</text>
+<form catchsubmit="formSubmit">
+	<input type="text" name="username" placeholder="用户名" />
+	<input name="password" password="true" placeholder="密码" />
+	<button type="primary" form-type="submit">提交</button>
+</form>
+<button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">getPhoneNumber</button>
+<button open-type="getUserInfo" bindgetuserinfo="userInfoHandler">授权</button>
+<view class="avatar">
+	<open-data type="userAvatarUrl"></open-data></view>
+<open-data type="userNickName"></open-data>
